@@ -50,7 +50,7 @@
 	1. Fixed some incompatibilities between x240 and x243 
 */
 
-#include <Taunix\x243\sci.h>
+#include <Taunix/x243/sci.h>
 
 
 CDEVSW	sci;

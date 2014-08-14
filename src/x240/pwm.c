@@ -38,8 +38,8 @@
 
 */
 
-#include <Taunix\task.h>
-#include <Taunix\x240\pwm.h>
+#include <Taunix/task.h>
+#include <Taunix/x240/pwm.h>
 
 CDEVSW	pwm;
 

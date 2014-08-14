@@ -4,7 +4,7 @@
 語法
 	#include <Taunix.h> 
 	or
-	#include <Taunix\task.h>
+	#include <Taunix/task.h>
 
 	int suspend(int task_id);
 

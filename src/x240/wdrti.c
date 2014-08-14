@@ -1,30 +1,17 @@
 /* ----------------------------------------------------------------------- 
 *
- 
 *
- 
 *   This program is free software; you can redistribute it and/or modify
- 
 *   it under the terms of the GNU General Public License as published by
- 
 *   the Free Software Foundation, Inc., 675 Mass Ave, Cambridge MA 02139,
- 
 *   USA; either version 2 of the License, or (at your option) any later
- 
 *   version.
- 
 *   
- 
 *   This program is distributed in the hope that it will be useful,
- 
 *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- 
 *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- 
 *   GNU General Public License for more details.
- 
 *
- 
 * ----------------------------------------------------------------------- */
 
 
@@ -45,8 +32,8 @@
   	   (ex: extra external clock) to trig NMI.
 */                                            
 
-#include <Taunix\x240\F240mmrs.h>
-#include <Taunix\x240\wdrti.h>
+#include <Taunix/x240/F240mmrs.h>
+#include <Taunix/x240/wdrti.h>
 
 
 /*
@@ -108,7 +95,7 @@ void wdrt_isr()
 	#else
 	sys_time.us += 244;
 	#endif 
- */
+ /**/
 	if(sys_time.us>1000){
 		sys_time.ms ++;
 		sys_time.us = 0;

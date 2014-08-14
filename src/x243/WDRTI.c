@@ -45,8 +45,8 @@
   	   (ex: extra external clock) to trig NMI.
 */                                            
 
-#include <Taunix\x243\F243mmrs.h>
-#include <Taunix\x243\wdrti.h>
+#include <Taunix/x243/F243mmrs.h>
+#include <Taunix/x243/wdrti.h>
 
 
 /*

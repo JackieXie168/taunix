@@ -56,10 +56,10 @@
 
 
 
-#include <Taunix\x240\F243mmrs.h>
-#include <Taunix\task.h>
+#include <Taunix/x243/F243mmrs.h>
+#include <Taunix/task.h>
 #define TI_DSP32Cx243
-#include <Taunix\x243\adc.h>
+#include <Taunix/x243/adc.h>
 
 CDEVSW	adc;
 

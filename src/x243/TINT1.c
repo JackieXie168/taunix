@@ -30,19 +30,21 @@
 
 
 
-#include <Taunix\task.h>
-#include <Taunix\x243\wdrti.h>
-#include <Taunix\x243\F243mmrs.h>
-#include <Taunix\sleep.h>
-#include <Taunix\priList.h>
-#include <Taunix\at.h>
+#include <Taunix/task.h>
+#include <Taunix/x243/wdrti.h>
+#include <Taunix/x243/F243mmrs.h>
+#include <Taunix/sleep.h>
+#include <Taunix/priList.h>
+#include <Taunix/at.h>
 
 void wakeup();
 extern priNode 	taskSleepNodes[];
 extern priList		sleepq;
 
 inline void atd(void *param);
+#if __linux__
 #include <ioports.h>
+#endif
 void c_int1()
 {
 	/* For 243 DSP */

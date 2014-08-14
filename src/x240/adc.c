@@ -56,9 +56,9 @@
 
 
 
-#include <Taunix\x240\F240mmrs.h>
-#include <Taunix\task.h>
-#include <Taunix\x240\adc.h>
+#include <Taunix/x240/F240mmrs.h>
+#include <Taunix/task.h>
+#include <Taunix/x240/adc.h>
 
 CDEVSW	adc;
 

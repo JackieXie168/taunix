@@ -36,9 +36,9 @@
 		Comment out the resume task statement in the ADC interrupt.
 */
 
-#include <Taunix\x243\F243mmrs.h>
-#include <Taunix\task.h>
-#include <Taunix\x243\adc.h>
+#include <Taunix/x243/F243mmrs.h>
+#include <Taunix/task.h>
+#include <Taunix/x243/adc.h>
 
 void (*TNX_XINT1)() = 0;
 void (*TNX_XINT2)() = 0;

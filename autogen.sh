@@ -44,7 +44,7 @@ autoheader			&& \
 echo "- automake."		&& \
 automake --add-missing --gnu	&& \
 echo				&& \
-./configure "$@"		&& exit 0
+./configure --without-x240 "$@"		&& exit 0
 
 exit 1
 

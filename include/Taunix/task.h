@@ -1,17 +1,30 @@
 /* ----------------------------------------------------------------------- 
 *
+
 *   This program is free software; you can redistribute it and/or modify
+
 *   it under the terms of the GNU General Public License as published by
+
 *   the Free Software Foundation, Inc., 675 Mass Ave, Cambridge MA 02139,
+
 *   USA; either version 2 of the License, or (at your option) any later
+
 *   version.
+
 *   
+
 *   This program is distributed in the hope that it will be useful,
+
 *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+
 *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
 *   GNU General Public License for more details.
+
 *
+
 * ----------------------------------------------------------------------- */
+
 
 /*---------------------------------------------*\
 |                                               |
@@ -97,8 +110,13 @@ void resched();
 void task_start();
 
 /* Define some macros */
+#if defined(darwin) || defined(__FreeBSD__) || defined(__APPLE__) || defined(MACOSX)
+#define disable_int		__asm__ __volatile__ ("cli");/*{*/
+#define enable_int		__asm__ __volatile__ ("sti");/*}*/
+#else
 #define disable_int		asm("	setc	INTM");/*{*/
 #define enable_int		asm("	clrc	INTM");/*}*/
+#endif
 #define disable_sched	sched_flag=0;
 #define enable_sched	sched_flag=1;resched();
 #define delay_sched		sched_flag=2;

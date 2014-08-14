@@ -50,7 +50,7 @@
 	1. Fixed some incompatibilities between x240 and x243 
 */
 
-#include <Taunix\x240\sci.h>
+#include <Taunix/x240/sci.h>
 
 
 CDEVSW	sci;
@@ -85,7 +85,7 @@ int sci_open(int flag,int brr)
 	MMREGS[SCIHBAUD] = brr>>8;	/* Set high BRR */
 	MMREGS[SCILBAUD] = brr;		/* Set low BRR */
 	/* For 240 */
-	MMREGS[SCICCR] |= 0x10;*/
+	MMREGS[SCICCR] |= 0x10;/**/
 	/* In SCICCR.4@240 is SCIENA, but in 243, it's LOOPBACK */
 	MMREGS[SCICTL1] = 0x30; /* Set SW RESET to 1 (freeze SCI flag) */
 	return 1;

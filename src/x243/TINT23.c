@@ -44,9 +44,9 @@
 		   in ISR must change to fit 243's need.
 */
 
-#include <Taunix\x243\F243mmrs.h>
-#include <Taunix\task.h>
-#include <Taunix\x243\gpt.h>
+#include <Taunix/x243/F243mmrs.h>
+#include <Taunix/task.h>
+#include <Taunix/x243/gpt.h>
 
 extern GPTRESB	gptres[];
 

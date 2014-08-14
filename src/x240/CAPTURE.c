@@ -47,8 +47,8 @@
 		   in ISR must change to fit 243's need.
 */
 
-#include <Taunix\x240\capture.h>
-#include <Taunix\task.h>
+#include <Taunix/x240/capture.h>
+#include <Taunix/task.h>
 
 
 CDEVSW	capture;

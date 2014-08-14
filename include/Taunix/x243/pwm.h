@@ -1,17 +1,30 @@
 /* ----------------------------------------------------------------------- 
 *
+
 *   This program is free software; you can redistribute it and/or modify
+
 *   it under the terms of the GNU General Public License as published by
+
 *   the Free Software Foundation, Inc., 675 Mass Ave, Cambridge MA 02139,
+
 *   USA; either version 2 of the License, or (at your option) any later
+
 *   version.
+
 *   
+
 *   This program is distributed in the hope that it will be useful,
+
 *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+
 *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
 *   GNU General Public License for more details.
+
 *
+
 * ----------------------------------------------------------------------- */
+
 
 /*---------------------------------------------*\
 |                                               |
@@ -51,9 +64,9 @@ int pwm_ioctl(unsigned int request,void *argq);
 #define PWM_SYMMETRIC	0x2800
 #define PWM_ASYMMETRIC	0x1000
 /* Definitions for pwm_open()'s mode */
-#define FPWM			 0x8000   /* PWM selector */
-/* For 240
-#define SPWM			 0x4000   *//* PWM selector */
+#define FPWM				0x8000   /* PWM selector */
+/* For 240 */
+#define SPWM				0x4000   /* PWM selector */
 
 #define PWM1_LOW   		 0x0000
 #define PWM1_HIGH	 	 0x0003

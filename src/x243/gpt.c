@@ -50,8 +50,8 @@
  	   Now this has been corrected.
 */
 
-#include <Taunix\task.h>
-#include <Taunix\x243\gpt.h>
+#include <Taunix/task.h>
+#include <Taunix/x243/gpt.h>
 
 
 CDEVSW	gpt;

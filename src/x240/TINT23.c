@@ -44,9 +44,9 @@
 		   in ISR must change to fit 243's need.
 */
 
-#include <Taunix\x240\F240mmrs.h>
-#include <Taunix\task.h>
-#include <Taunix\x240\gpt.h>
+#include <Taunix/x240/F240mmrs.h>
+#include <Taunix/task.h>
+#include <Taunix/x240/gpt.h>
 
 extern GPTRESB	gptres[];
 
@@ -113,7 +113,7 @@ void c_int3()
 		CASE_TCINT3
 		CASE_TUFINT3
 		CASE_TOFINT3
-			if(gptres[GPTIMER_3].callback)*/ /* NON-BLOCK mode */
+			if(gptres[GPTIMER_3].callback)/**/ /* NON-BLOCK mode */
 	 			gptres[GPTIMER_3].callback(&param);
 		 	/*else if(gptres[GPTIMER_3].owner_task != -1)*/ /* BLOCK mode */
 		 		/*resume(gptres[GPTIMER_3].owner_task);*/

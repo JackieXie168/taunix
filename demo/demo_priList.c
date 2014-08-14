@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "priList.h"
+
 priNode	nodes[12];
 priList	list;
 int main(int argc, char **argv)

@@ -38,8 +38,8 @@
 
 */
 
-#include <Taunix\task.h>
-#include <Taunix\x243\pwm.h>
+#include <Taunix/task.h>
+#include <Taunix/x243/pwm.h>
 
 CDEVSW	pwm;
 
@@ -73,8 +73,8 @@ int pwm_open(int flag,int mode)
 	 case SPWM: /* For 240
 	 	MMREGS[SACTR] = (mode & 0x3FFF);
 	 	MMREGS[OCRA] |= 0x0700;
-	 		break;
 		*/
+	 		break;
 	}
 	/* Set COMCON */
 	MMREGS[COMCON] = 0x0300;/* Use full and simple compare */
@@ -106,8 +106,8 @@ int pwm_write(const void *pwmb,unsigned int pwm_selector)
 	 	 	break;
 	 case SPWM: /* For 240
 	 	DIRECTSPWMBLOCK(pwm_block);
-	 		break;
 		*/
+	 		break;
 	}
 	userPWMB = (PWMB*)pwmb;
 	pwm_block->T1 = userPWMB->T1;

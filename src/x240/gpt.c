@@ -50,8 +50,8 @@
  	   Now this has been corrected.
 */
 
-#include <Taunix\task.h>
-#include <Taunix\x240\gpt.h>
+#include <Taunix/task.h>
+#include <Taunix/x240/gpt.h>
 
 
 CDEVSW	gpt;
@@ -208,7 +208,7 @@ int gpt_ioctl(unsigned  request,void *argp)
 			/*if(gptres[2].owner_task != current_task)	return -1;*//**/
 			MMREGS[EVIMRB] |= 0x00F0;
 			MMREGS[OCRA] |= 0x2000;
-			MMREGS[T3CON] |= GPTIMER_ENABLE;*//* 0x0040 *//**/
+			MMREGS[T3CON] |= GPTIMER_ENABLE;/**//* 0x0040 *//**/
 			break;
 	 	 case GPT3_STOP:/**/
 			/*if(gptres[2].owner_task != current_task)	return -1;*//**/
