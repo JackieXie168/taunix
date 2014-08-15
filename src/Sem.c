@@ -55,7 +55,7 @@ int semget()
  				}
  	enable_sched
  	if(free_sem == MAX_SEM)	return	-1;
- 	else					return	free_sem;
+ 	else return free_sem;
 }
 
 /* Release semaphore */
